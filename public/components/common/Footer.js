@@ -7,6 +7,7 @@ export default function Footer() {
       <footer className={styles.footer}>
         <h1 className={styles.footerHeading}>Footer</h1>
         <h2>I am Working on Guru-Designer branch</h2>
+        <h4>This is my second commit on guru designer branch</h4>
       </footer>
     </>
   )
