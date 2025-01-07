@@ -1,6 +1,7 @@
-import Header from "../../public/components/common/Header";
 import Footer from "../../public/components/common/Footer";
+import Header from "../../public/components/common/Header";
 import HomeSlider from "../../public/components/homecomponents/HomeSlider";
+
 
 export default function Home() {
   return (
