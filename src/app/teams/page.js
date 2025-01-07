@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from '../../../public/components/common/Header'
 import Footer from '../../../public/components/common/Footer'
-import AboutBlisttech from '../../../public/components/aboutuscomponents/AboutBlisttech'
+import TeamBanner from '../../../public/components/teamcomponents/TeamBanner'
 
 export default function page() {
   return (
-    <>
-    <Header />
-    <AboutBlisttech />
-    <Footer />
-    </>
+   <>
+   <Header />
+   <TeamBanner />
+   <Footer />
+   </>
   )
 }
