@@ -1,6 +1,31 @@
-.footer{
-    background-color: green;
+.footer {
+    padding: 50px 0px;
 }
-.footerHeading{
-    color:red;
+
+.footer div ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer div ul li {
+    font-size: 15px;
+    line-height: 30px;
+}
+li .skype{
+    color: #00aff0;
+}
+li .email{
+    color: #e01616;
+}
+
+.footer div ul li a {
+    color: #65717e;
+    font-weight: 300;
+    text-decoration: none;
+}
+.footer h4{
+    margin-bottom: 20px;
+}
+.footer h6{
+    margin-bottom: 30px;
 }
