@@ -1,3 +1,23 @@
-.HomeSlider{
+.banner {
     background-color: aqua;
+    background-image: linear-gradient(#1d6fa5, #3498db);
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 55px;
+    display: block;
+    margin: 0;
+    font-weight: 300;
+}
+
+.banner h2 {
+    color: #FFF;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 20px 0 0;
+    font-weight: 300;
+
+
 }
