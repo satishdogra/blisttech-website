@@ -1,4 +1,4 @@
-.ourexperties h2{
+.ourexperties h2 {
     margin: 40px 0 40px;
     color: #28323c;
     font-size: 35px;
@@ -6,17 +6,27 @@
     font-weight: 300;
     text-align: center;
 }
-h6 .righterrow{
+
+h6 .righterrow {
     float: right;
     color: #02ad3b;
 }
+
 .zoom {
     transition: transform 1s;
     margin: 0 auto;
-     }
+}
+
 .zoom:hover {
-        -ms-transform: scale(1.03   ); /* IE 9 */
-        -webkit-transform: scale(1.03   ); /* Safari 3-8 */
-        transform: scale(1.03   ); 
-          }
-         
+    -ms-transform: scale(1.03);
+    /* IE 9 */
+    -webkit-transform: scale(1.03);
+    /* Safari 3-8 */
+    transform: scale(1.03);
+}
+.ourexperties .CardImg{
+    overflow: hidden;
+    max-height: 251px;
+    max-width: 251px;
+    height: 100%;
+}
