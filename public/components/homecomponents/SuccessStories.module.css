@@ -1,0 +1,38 @@
+.SuccessStories {
+  background: #f3f3f3 !important;
+  padding: 60px 0;
+}
+.SuccessStories h2 {
+  margin: 0px 0 40px;
+  color: #28323c;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 300;
+  text-align: center;
+}
+.SuccessStories .SliderCard {
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid #fff;
+  background: none;
+}
+.SliderCardText {
+  font-size: 16px;
+  line-height: 30px;
+  color: #5f7289;
+  font-weight: 300;
+  font-style: italic;
+}
+.SuccessStories .SliderCard i.downSmallArrow {
+  position: absolute;
+  bottom: -26px;
+  left: 11px;
+  font-size: 25px;
+  color: #fff;
+}
+.SliderIndication {
+  bottom: -60px;
+}
+.SliderIndication button {
+  background-color: red;
+}
