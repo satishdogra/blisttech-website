@@ -17,7 +17,7 @@ export default function Contact() {
                   width={70}
                 />
               </div>
-              <div className={styles.content}>
+              <div className={styles.ContentText}>
                 <h4>LOCATION</h4>
                 <p className="m-0">Chandigarh, India</p>
               </div>
@@ -31,7 +31,7 @@ export default function Contact() {
                   width={70}
                 />
               </div>
-              <div className={styles.content}>
+              <div className={styles.ContentText}>
                 <h4>EMAIL</h4>
                 <p className="m-0">blisttech@gmail.com</p>
               </div>
@@ -45,7 +45,7 @@ export default function Contact() {
                   width={70}
                 />
               </div>
-              <div className={styles.content}>
+              <div className={styles.ContentText}>
                 <h4>SKYPE</h4>
                 <p className="m-0">blisttech</p>
               </div>

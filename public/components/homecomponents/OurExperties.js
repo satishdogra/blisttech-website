@@ -39,11 +39,17 @@ export default function OurExperties() {
               </a>
             </div>
             <div className="col-md-3 col-12">
-              <div
+              <a
+                href="#"
+                target="_blank"
                 className="card shadow bg-body-tertiary rounded"
-                style={{ width: "100%", overflow: "hidden" }}
+                style={{
+                  width: "100%",
+                  overflow: "hidden",
+                  textDecoration: "none",
+                }}
               >
-                <div className={styles.CardImg}>
+                <span className={styles.CardImg}>
                   <Image
                     src="/images/ourexperties/responsive.jpg"
                     className={`card-img-top ${styles.zoom}`}
@@ -52,21 +58,27 @@ export default function OurExperties() {
                     width={251}
                     style={{ width: "100%", height: "auto" }}
                   />
-                </div>
-                <div className="card-body">
+                </span>
+                <span className="card-body">
                   <h6 className="card-title m-0">
-                    Responsive Design{" "}
+                    Responsive Design
                     <i className={`bi bi-arrow-right ${styles.rightArrow}`}></i>
                   </h6>
-                </div>
-              </div>
+                </span>
+              </a>
             </div>
             <div className="col-md-3 col-12">
-              <div
+              <a
+                href="#"
+                target="_blank"
                 className="card shadow bg-body-tertiary rounded"
-                style={{ width: "100%", overflow: "hidden" }}
+                style={{
+                  width: "100%",
+                  overflow: "hidden",
+                  textDecoration: "none",
+                }}
               >
-                <div className={styles.CardImg}>
+                <span className={styles.CardImg}>
                   <Image
                     src="/images/ourexperties/landing-page-design.jpg"
                     className={`card-img-top ${styles.zoom}`}
@@ -75,21 +87,27 @@ export default function OurExperties() {
                     width={251}
                     style={{ width: "100%", height: "auto" }}
                   />
-                </div>
-                <div className="card-body">
+                </span>
+                <span className="card-body">
                   <h6 className="card-title m-0">
                     Landing Page Design
                     <i className={`bi bi-arrow-right ${styles.rightArrow}`}></i>
                   </h6>
-                </div>
-              </div>
+                </span>
+              </a>
             </div>
             <div className="col-md-3 col-12">
-              <div
+              <a
+                href="#"
+                target="_blank"
                 className="card shadow bg-body-tertiary rounded"
-                style={{ width: "100%", overflow: "hidden" }}
+                style={{
+                  width: "100%",
+                  overflow: "hidden",
+                  textDecoration: "none",
+                }}
               >
-                <div className={styles.CardImg}>
+                <span className={styles.CardImg}>
                   <Image
                     src="/images/ourexperties/logo-design.jpg"
                     className={`card-img-top ${styles.zoom}`}
@@ -98,23 +116,29 @@ export default function OurExperties() {
                     width={251}
                     style={{ width: "100%", height: "auto" }}
                   />
-                </div>
-                <div className="card-body">
+                </span>
+                <span className="card-body">
                   <h6 className="card-title m-0">
                     Logo Design
                     <i className={`bi bi-arrow-right ${styles.rightArrow}`}></i>
                   </h6>
-                </div>
-              </div>
+                </span>
+              </a>
             </div>
           </div>
-          <div className="row my-5">
+          <div className="row py-4">
             <div className="col-md-3 col-12">
-              <div
+              <a
+                href="#"
+                target="_blank"
                 className="card shadow bg-body-tertiary rounded"
-                style={{ width: "100%", overflow: "hidden" }}
+                style={{
+                  width: "100%",
+                  overflow: "hidden",
+                  textDecoration: "none",
+                }}
               >
-                <div className={styles.CardImg}>
+                <span className={styles.CardImg}>
                   <Image
                     src="/images/ourexperties/graphics.jpg"
                     className={`card-img-top ${styles.zoom}`}
@@ -123,21 +147,27 @@ export default function OurExperties() {
                     width={251}
                     style={{ width: "100%", height: "auto" }}
                   />
-                </div>
-                <div className="card-body">
+                </span>
+                <span className="card-body">
                   <h6 className="card-title m-0">
                     Graphics Design
                     <i className={`bi bi-arrow-right ${styles.rightArrow}`}></i>
                   </h6>
-                </div>
-              </div>
+                </span>
+              </a>
             </div>
             <div className="col-md-3 col-12">
-              <div
+              <a
+                href="#"
+                target="_blank"
                 className="card shadow bg-body-tertiary rounded"
-                style={{ width: "100%", overflow: "hidden" }}
+                style={{
+                  width: "100%",
+                  overflow: "hidden",
+                  textDecoration: "none",
+                }}
               >
-                <div className={styles.CardImg}>
+                <span className={styles.CardImg}>
                   <Image
                     src="/images/ourexperties/html-to-wp.jpg"
                     className={`card-img-top ${styles.zoom}`}
@@ -146,21 +176,27 @@ export default function OurExperties() {
                     width={251}
                     style={{ width: "100%", height: "auto" }}
                   />
-                </div>
-                <div className="card-body">
+                </span>
+                <span className="card-body">
                   <h6 className="card-title m-0">
                     Html To WordPress
                     <i className={`bi bi-arrow-right ${styles.rightArrow}`}></i>
                   </h6>
-                </div>
-              </div>
+                </span>
+              </a>
             </div>
             <div className="col-md-3 col-12">
-              <div
+              <a
+                href="#"
+                target="_blank"
                 className="card shadow bg-body-tertiary rounded"
-                style={{ width: "100%", overflow: "hidden" }}
+                style={{
+                  width: "100%",
+                  overflow: "hidden",
+                  textDecoration: "none",
+                }}
               >
-                <div className={styles.CardImg}>
+                <span className={styles.CardImg}>
                   <Image
                     src="/images/ourexperties/seo.jpg"
                     className={`card-img-top ${styles.zoom}`}
@@ -169,21 +205,27 @@ export default function OurExperties() {
                     width={251}
                     style={{ width: "100%", height: "auto" }}
                   />
-                </div>
-                <div className="card-body">
+                </span>
+                <span className="card-body">
                   <h6 className="card-title m-0">
                     Search Engine Optimization
                     <i className={`bi bi-arrow-right ${styles.rightArrow}`}></i>
                   </h6>
-                </div>
-              </div>
+                </span>
+              </a>
             </div>
             <div className="col-md-3 col-12">
-              <div
+              <a
+                href="#"
+                target="_blank"
                 className="card shadow bg-body-tertiary rounded"
-                style={{ width: "100%", overflow: "hidden" }}
+                style={{
+                  width: "100%",
+                  overflow: "hidden",
+                  textDecoration: "none",
+                }}
               >
-                <div className={styles.CardImg}>
+                <span className={styles.CardImg}>
                   <Image
                     src="/images/ourexperties/development.jpg"
                     className={`card-img-top ${styles.zoom}`}
@@ -192,14 +234,14 @@ export default function OurExperties() {
                     width={251}
                     style={{ width: "100%", height: "auto" }}
                   />
-                </div>
-                <div className="card-body">
+                </span>
+                <span className="card-body">
                   <h6 className="card-title m-0">
                     Web Development
                     <i className={`bi bi-arrow-right ${styles.rightArrow}`}></i>
                   </h6>
-                </div>
-              </div>
+                </span>
+              </a>
             </div>
           </div>
         </div>

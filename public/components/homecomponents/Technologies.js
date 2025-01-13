@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Technologies() {
     return (
         <>
-            <div className={`bg-light-subtle ${styles.Technologies}`}>
+            <div className={styles.Technologies}>
                 <div className="container py-4 m-auto">
                     <h2 className="heading">Technologies Used</h2>
                     <div className="TechnologiesIcon">

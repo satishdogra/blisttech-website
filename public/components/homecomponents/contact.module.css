@@ -3,19 +3,19 @@
     background: #349aee;
     display: inline-block;
     color: white;
-}
+    }
 
 .Contact ul li{
     list-style-type: none;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 }
 .ContactImg{
 padding: 40px 0px;
 display: inline-block;
 }
-.content{
-padding: 0px 20px;
+.ContentText{
+padding:  20px 40px;
 border-left: 1px solid white ;
 }
