@@ -1,5 +1,9 @@
+.ourexperties {
+  padding: 60px 0;
+}
+
 .ourexperties h2 {
-  margin: 40px 0 40px;
+  margin: 0px 0px 40px;
   color: #28323c;
   font-size: 35px;
   line-height: 35px;
@@ -24,6 +28,7 @@ h6 .rightArrow {
   /* Safari 3-8 */
   transform: scale(1.03);
 }
+
 .ourexperties .CardImg {
   overflow: hidden;
   height: 100%;

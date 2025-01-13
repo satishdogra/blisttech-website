@@ -30,17 +30,11 @@ export default function AboutBlisttech() {
             </div>
             <div className={`col-6 ${styles.contact}`}>
               <h3>CONTACT US</h3>
-              {/*  <input className={`form-control  ${styles.form}`} type="text" value="Name" aria-label="Disabled input example" disabled readonly />
-              <input className={`form-control  ${styles.form}`} type="text" value="Email Address" aria-label="Disabled input example" disabled readonly />
-              <input className={`form-control  ${styles.form}`} type="text" value="Phone Number" aria-label="Disabled input example" disabled readonly />
-              <input className={`form-control  ${styles.form}`} type="text" value="Comment" aria-label="Disabled input example" disabled readonly />
-             */}
               <form>
                 <div className="mb-3">
                   <input
                     type="text"
                     className={`form-control border-bottom  ${styles.form}`}
-                    value=""
                     placeholder="Name"
                   />
                 </div>
@@ -48,21 +42,21 @@ export default function AboutBlisttech() {
                   <input
                     type="text"
                     className={`form-control border-bottom  ${styles.form}`}
-                    value="Email Address"
+                    placeholder="Email Address"
                   />
                 </div>
                 <div className="mb-3">
                   <input
                     type="text"
                     className={`form-control border-bottom  ${styles.form}`}
-                    value="Phone Number"
+                    placeholder="Phone Number"
                   />
                 </div>
                 <div className="mb-3">
                   <input
                     type="text"
                     className={`form-control border-bottom  ${styles.formComent}`}
-                    value="Comment"
+                    placeholder="Comment"
                   />
                 </div>
                 <div className="d-grid gap-2">

@@ -10,8 +10,8 @@ export default function Footer() {
             <div class="col-md-3 sd-12" >
               <h4>BLISTTECH</h4>
               <ul>
-              <li><a href="#" title="blistTech"><i className={`bi bi-skype px-1 ${styles.skype}`}></i>blistTech</a></li>
-              <li><a href="#" title="blisttech@gmail.com"><i className={`bi bi-envelope-fill px-1 ${styles.email}`}></i>blisttech@gmail.com</a></li>
+              <li><a href="#" title="blistTech"><i className={`bi bi-skype px-2 ${styles.skype}`}></i>blistTech</a></li>
+              <li><a href="#" title="blisttech@gmail.com"><i className={`bi bi-envelope-fill px-2 ${styles.email}`}></i>blisttech@gmail.com</a></li>
               </ul>
             </div>
             <div className="col-md-3 sd-12">

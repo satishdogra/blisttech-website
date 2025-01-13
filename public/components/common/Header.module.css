@@ -14,3 +14,90 @@
 .sociellink li a:hover{
     text-decoration: line-through
 }
+/*.megamenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 30px;
+    margin: 0 !important;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #394f61;
+    padding: 20px 0px;
+    width: 100%;
+}
+.DropdownMenu{
+    position: relative;
+    float: left;
+}
+.MegaWwrap{
+    padding: 0 100px;
+}
+.MegaWwrap ul{
+    list-style-type: none
+}
+.MegaWwrap ul li{
+    list-style-type: none;
+    color: white;
+} Mega Menu Styles*/
+ 
+.megamenu {
+    background-color: #394f61;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    }
+ .megamenu .col-sm-3 {
+    padding: 10px;
+  }
+  
+  .megamenu a {
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 8px 0;
+    display: block;
+    font-size: 13px;
+  }
+  
+  .megamenu li{
+    color: #ffffff;
+   }
+   .megamenu li:hover{
+    color: #3ace00;
+   }
+  .megamenu a:hover {
+   color: #3ace00;
+  }
+  
+  .MegaWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+  }
+  
+  .MegaWrap .col-sm-3 {
+    margin-bottom: 20px;
+  }
+/*   
+  @media (max-width: 768px) {
+    .MegaWrap {
+      flex-direction: column;
+    }
+    .MegaWrap .col-sm-3 {
+      width: 100%;
+    }
+  } */
+  
+  .dropdown-toggle:after {
+    vertical-align: .1em;
+}
+a.DropdownArrow::after{
+position: relative;
+top: 1px;
+}
