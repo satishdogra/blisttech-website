@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./AboutBlisttech.module.css";
-import Contact from "./ContactEmail";
+import ContactFormHome from "./ContactFormHome";
 
 export default function AboutBlisttech() {
   return (
@@ -29,11 +29,13 @@ export default function AboutBlisttech() {
                 your project.
               </p>
             </div>
-            <Contact/>
-{/*             
+
             <div className={`col-6 ${styles.contact}`}>
-              <h3>CONTACT US</h3>
-              
+              <ContactFormHome />
+            </div>
+
+            {/* <h3>CONTACT US</h3>
+
               <form>
                 <div className="mb-3">
                   <input
@@ -71,8 +73,7 @@ export default function AboutBlisttech() {
                     SEND
                   </button>
                 </div>
-              </form>
-            </div> */}
+              </form> */}
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
-import AboutBlisttech from "../../public/components/aboutuscomponents/AboutBlisttech";
+import AboutBlisttech from "../../public/components/homecomponents/AboutBlisttech";
 import Footer from "../../public/components/common/Footer";
 import Header from "../../public/components/common/Header";
-import Contact from "../../public/components/homecomponents/Contact";
+import BlisttechContactStrip from "../../public/components/homecomponents/BlisttechContactStrip";
 import Count from "../../public/components/homecomponents/Count";
 import HomeSlider from "../../public/components/homecomponents/HomeSlider";
 import OurExperties from "../../public/components/homecomponents/OurExperties";
@@ -22,7 +22,7 @@ export default function Home() {
       <Process />
       <Technologies />
       <AboutBlisttech />
-      <Contact />
+      <BlisttechContactStrip />
       <Footer />
     </>
   );

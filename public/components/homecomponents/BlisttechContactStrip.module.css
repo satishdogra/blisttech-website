@@ -1,0 +1,21 @@
+.Contact {
+  width: 100%;
+  background: #349aee;
+  display: inline-block;
+  color: white;
+}
+
+.Contact ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.ContactImg {
+  padding: 40px 0px;
+  display: inline-block;
+}
+.ContentText {
+  padding: 20px 40px;
+  border-left: 1px solid white;
+}

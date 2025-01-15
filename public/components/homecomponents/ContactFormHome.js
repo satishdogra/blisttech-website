@@ -1,17 +1,18 @@
-      // Import useState from React
-import { useState } from "react";
-import styles from "./ContactEmail.module.css"; // Import CSS module
+"use client";
 
-export default function ContactEmail() {
+import { useState } from "react";
+import styles from "./ContactFormHome.module.css"; // Import CSS module
+
+export default function ContactFormHome() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    comment: ''
+    name: "",
+    email: "",
+    phone: "",
+    comment: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [statusMessage, setStatusMessage] = useState('');
+  const [statusMessage, setStatusMessage] = useState("");
 
   // Handle change in form input fields
   const handleChange = (e) => {
@@ -26,13 +27,13 @@ export default function ContactEmail() {
     e.preventDefault();
 
     setIsSubmitting(true);
-    setStatusMessage('Sending...');
+    setStatusMessage("Sending...");
 
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
+      const response = await fetch("../../../src/api/ContactFormHome", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
@@ -40,19 +41,19 @@ export default function ContactEmail() {
       const data = await response.json();
 
       if (data.success) {
-        setStatusMessage('Message sent successfully!');
+        setStatusMessage("Message sent successfully!");
       } else {
-        setStatusMessage('Failed to send message.');
+        setStatusMessage("Failed to send message.");
       }
     } catch (error) {
-      setStatusMessage('An error occurred. Please try again later.');
+      setStatusMessage("Not Working");
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <div className={`col-6 ${styles.contact}`}>
+    <>
       <h3>CONTACT US</h3>
 
       <form onSubmit={handleSubmit}>
@@ -92,7 +93,7 @@ export default function ContactEmail() {
         <div className="mb-3">
           <textarea
             name="comment"
-            className={`form-control border-bottom ${styles.formComment}`}
+            className={`form-control border-bottom ${styles.formComment} ${styles.form}`}
             placeholder="Comment"
             value={formData.comment}
             onChange={handleChange}
@@ -105,11 +106,11 @@ export default function ContactEmail() {
             type="submit"
             disabled={isSubmitting}
           >
-            {isSubmitting ? 'Sending...' : 'SEND'}
+            {isSubmitting ? "Sending..." : "SEND"}
           </button>
         </div>
       </form>
       {statusMessage && <p>{statusMessage}</p>}
-    </div>
+    </>
   );
 }

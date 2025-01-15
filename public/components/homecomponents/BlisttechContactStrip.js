@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./contact.module.css";
+import styles from "./BlisttechContactStrip.module.css";
 import Image from "next/image";
 
-export default function Contact() {
+export default function BlisttechContactStrip() {
   return (
     <>
       <div className={styles.Contact}>
