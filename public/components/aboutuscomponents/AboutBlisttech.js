@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AboutBlisttech.module.css";
+import Contact from "./ContactEmail";
 
 export default function AboutBlisttech() {
   return (
@@ -19,7 +20,7 @@ export default function AboutBlisttech() {
               <p>
                 We are committed towards achieving high levels of customer
                 satisfaction by ensuring to provide best quality and cost
-                effective business structure.{" "}
+                effective business structure.
               </p>
               <p>
                 With our team of the most talented individuals in the industry
@@ -28,8 +29,11 @@ export default function AboutBlisttech() {
                 your project.
               </p>
             </div>
+            <Contact/>
+{/*             
             <div className={`col-6 ${styles.contact}`}>
               <h3>CONTACT US</h3>
+              
               <form>
                 <div className="mb-3">
                   <input
@@ -68,7 +72,7 @@ export default function AboutBlisttech() {
                   </button>
                 </div>
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
