@@ -16,10 +16,11 @@ export default function ContactFormHome() {
 
   // Handle change in form input fields
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
   // Handle form submission
@@ -30,7 +31,7 @@ export default function ContactFormHome() {
     setStatusMessage("Sending...");
 
     try {
-      const response = await fetch("../../../src/api/ContactFormHome", {
+      const response = await fetch("/api/ContactFormHome", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,22 +39,26 @@ export default function ContactFormHome() {
         body: JSON.stringify(formData),
       });
 
+      if (!response.ok) {
+        throw new Error("Failed to send message.");
+      }
+
       const data = await response.json();
 
-      if (data.success) {
+      if (data.success === "Email sent successfully.") {
         setStatusMessage("Message sent successfully!");
       } else {
         setStatusMessage("Failed to send message.");
       }
     } catch (error) {
-      setStatusMessage("Not Working");
+      setStatusMessage(error.message || "Something went wrong. Please try again.");
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(true);
     }
   };
 
   return (
-    <>
+    <div className={styles.contactForm}>
       <h3>CONTACT US</h3>
 
       <form onSubmit={handleSubmit}>
@@ -68,6 +73,7 @@ export default function ContactFormHome() {
             required
           />
         </div>
+
         <div className="mb-3">
           <input
             type="email"
@@ -79,6 +85,7 @@ export default function ContactFormHome() {
             required
           />
         </div>
+
         <div className="mb-3">
           <input
             type="text"
@@ -90,6 +97,7 @@ export default function ContactFormHome() {
             required
           />
         </div>
+
         <div className="mb-3">
           <textarea
             name="comment"
@@ -100,6 +108,7 @@ export default function ContactFormHome() {
             required
           />
         </div>
+
         <div className="d-grid gap-2">
           <button
             className={`btn border ${styles.button}`}
@@ -110,7 +119,8 @@ export default function ContactFormHome() {
           </button>
         </div>
       </form>
+
       {statusMessage && <p>{statusMessage}</p>}
-    </>
+    </div>
   );
 }
