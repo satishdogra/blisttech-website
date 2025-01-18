@@ -5,7 +5,7 @@ export default function HomeSlider() {
   return (
     <>
       <div className={styles.HomeSlider}>
-        <div class={`py-5 text-center container-flude ${styles.banner}`}>
+        <div className={`py-5 text-center container-flude ${styles.banner}`}>
         <div className="row py-lg-5">
           <h1 className="fw-medium "><strong>BlistTech</strong></h1><br />
           <h1 className="fw-medium"><strong>Web Designing &amp; Development Firm</strong></h1><br />

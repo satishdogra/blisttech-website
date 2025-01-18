@@ -77,3 +77,11 @@
      box-shadow: 2px 2px  25px rgba(0, 0, 0, 0.507);
  
  }
+ /* styles.module.css */
+.noFocusBorder:focus {
+    outline: none;
+    border: none; /* Remove the blue border */
+  }
+  
+  
+  

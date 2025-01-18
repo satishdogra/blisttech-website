@@ -5,13 +5,13 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3 sd-12" >
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3 sd-12" >
               <h4>BLISTTECH</h4>
               <ul>
-              <li><a href="#" title="blistTech"><i className={`bi bi-skype px-2 ${styles.skype}`}></i>blistTech</a></li>
-              <li><a href="#" title="blisttech@gmail.com"><i className={`bi bi-envelope-fill px-2 ${styles.email}`}></i>blisttech@gmail.com</a></li>
+              <li><a href="skype:blisttech?chat" title="blistTech"><i className={`bi bi-skype px-2 ${styles.skype}`}></i>blistTech</a></li>
+              <li><a href="mailto:blisttech@gmail.com" title="blisttech@gmail.com"><i className={`bi bi-envelope-fill px-2 ${styles.email}`}></i>blisttech@gmail.com</a></li>
               </ul>
             </div>
             <div className="col-md-3 sd-12">
