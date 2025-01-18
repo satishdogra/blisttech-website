@@ -19,3 +19,8 @@
   padding: 20px 40px;
   border-left: 1px solid white;
 }
+.ContentText p a {
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+}

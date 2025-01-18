@@ -1,59 +1,39 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./ContactFormHome.module.css"; // Import CSS module
+import styles from "./AboutBlisttech.module.css";
 
-export default function ContactFormHome() {
+export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     comment: "",
   });
+  const [message, setMessage] = useState(null);
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [statusMessage, setStatusMessage] = useState("");
-
-  // Handle change in form input fields
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    setIsSubmitting(true);
-    setStatusMessage("Sending...");
+    setMessage({type: 'success', message: 'Sending...'});
 
     try {
-      const response = await fetch("/api/ContactFormHome", {
+      const res = await fetch("/api/ContactFormHome", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-
-      if (!response.ok) {
-        throw new Error("Failed to send message.");
-      }
-
-      const data = await response.json();
-
-      if (data.success === "Email sent successfully.") {
-        setStatusMessage("Message sent successfully!");
+      if (res.ok) {
+        setMessage({ type: 'success', message: 'Your message has been sent successfully!' });
+        setFormData({ name: "", email: "", phone: "", comment: "" });
       } else {
-        setStatusMessage("Failed to send message.");
+        setMessage({ type: 'danger', message: 'There was an error sending your message.' });
       }
     } catch (error) {
-      setStatusMessage(error.message || "Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(true);
+      setMessage({ type: 'danger', message: 'There was an error sending your message.' });
     }
   };
 
@@ -66,7 +46,7 @@ export default function ContactFormHome() {
           <input
             type="text"
             name="name"
-            className={`form-control border-bottom ${styles.form}`}
+            className={`form-control border-bottom ${styles.form} ${styles.noFocusBorder}`}
             placeholder="Name"
             value={formData.name}
             onChange={handleChange}
@@ -110,17 +90,19 @@ export default function ContactFormHome() {
         </div>
 
         <div className="d-grid gap-2">
-          <button
-            className={`btn border ${styles.button}`}
-            type="submit"
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? "Sending..." : "SEND"}
+          <button className={`btn border ${styles.button}`} type="submit">
+            Send
           </button>
         </div>
       </form>
 
-      {statusMessage && <p>{statusMessage}</p>}
+     {message &&(
+      <div className={`alert alert-${message.type} alert-dismissible fade show mt-3`} role="alert">
+        <strong>{message.message}</strong>
+        <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+     )}
+
     </div>
   );
 }

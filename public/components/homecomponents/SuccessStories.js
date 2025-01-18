@@ -1,167 +1,86 @@
 import React from "react";
 import styles from "./SuccessStories.module.css";
+import successStories from "@/app/json/HomeData/successstories";
+
 
 export default function SuccessStories() {
-  return (
-    <>
-      <div className={`bg-light-subtle ${styles.SuccessStories}`}>
-        <div className="container py-3">
-          <h2 className="heading">Success stories from our Partners</h2>
-          <div id="carouselExampleIndicators" className="carousel slide">
-            <div className={`carousel-indicators ${styles.SliderIndication}`}>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-                style={{ backgroundColor: "#333" }}
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-                style={{ backgroundColor: "#333" }}
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-                style={{ backgroundColor: "#333" }}
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-                style={{ backgroundColor: "#333" }}
-              ></button>
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <div className="row">
-                  <div className={`col-sm-6 mb-3 mb-sm-0 ${styles.TextStyle}`}>
-                    <div className={`card ${styles.SliderCard}`}>
-                      <div className="card-body">
-                        <p className={`card-text ${styles.SliderCardText}`}>
-                          BlistTech team did a fantastic job, Created one
-                          landing page from scratch (design + HTML) and
-                          implemented an existing sign up form. They are always
-                          available to discuss any changes and give us an update
-                          of the progress of the job I would recommend him with
-                          no hesitation! Well definitely hire him again
-                        </p>
-                      </div>
-                      <i
-                        className={`bi bi-caret-down-fill ${styles.downSmallArrow}`}
-                      ></i>
-                    </div>
-                    <span className={styles.ClientName}>Elena Magaña</span>                    
-                    <span className={styles.Designation}>Landing Page design &amp; Development</span>
-                  </div>
-                  <div className={`col-sm-6 mb-3 mb-sm-0 ${styles.TextStyle}`}>
-                    <div className={`card ${styles.SliderCard}`}>
-                      <div className="card-body">
-                        <p className={`card-text ${styles.SliderCardText}`}>
-                          BlistTech team have done a great job for me on developing my mobile application for my business. They worked through many problems with me that were due to my lack of familiarity with application development. I would highly recommend them.
-                        </p>
-                      </div>
-                      <i
-                        className={`bi bi-caret-down-fill ${styles.downSmallArrow}`}
-                      ></i>
-                    </div>
-                    <span className={styles.ClientName}>Ben.</span>                    
-                    <span className={styles.Designation}>Mobie App for IOS</span>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div className="row">
-                <div className={`col-sm-6 mb-3 mb-sm-0 ${styles.TextStyle}`}>
-                    <div className={`card ${styles.SliderCard}`}>
-                      <div className="card-body">
-                        <p className={`card-text ${styles.SliderCardText}`}>
-                          The Blistech team is always so responsive and helpful! Thanks for great work!
-                        </p>
-                      </div>
-                      <i
-                        className={`bi bi-caret-down-fill ${styles.downSmallArrow}`}
-                      ></i>
-                    </div>
-                    <span className={styles.ClientName}>Janet Griffin</span>                    
-                  </div>
-                  <div className={`col-sm-6 mb-3 mb-sm-0 ${styles.TextStyle}`}>
-                    <div className={`card ${styles.SliderCard}`}>
-                      <div className="card-body">
-                        <p className={`card-text ${styles.SliderCardText}`}>
-                          Team was communicative and delivered on deadline. I am satisfied !
-                        </p>
-                      </div>
-                      <i
-                        className={`bi bi-caret-down-fill ${styles.downSmallArrow}`}
-                      ></i>
-                    </div>
-                    <span className={styles.ClientName}>Dinesh Moddi</span>                    
-                    <span className={styles.Designation}>Creative Logo Design</span>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div className="row">
-                <div className={`col-sm-6 mb-3 mb-sm-0 ${styles.TextStyle}`}>
-                    <div className={`card ${styles.SliderCard}`}>
-                      <div className="card-body">
-                        <p className={`card-text ${styles.SliderCardText}`}>
-                          All around good job and got the job done in a timely manner. I am already hiring him for another job.
-                        </p>
-                      </div>
-                      <i
-                        className={`bi bi-caret-down-fill ${styles.downSmallArrow}`}
-                      ></i>
-                    </div>
-                    <span className={styles.ClientName}>Julian Lejade</span>                    
-                    <span className={styles.Designation}> Wordpress Expert</span>
-                  </div>
-                  <div className={`col-sm-6 mb-3 mb-sm-0 ${styles.TextStyle}`}>
-                    <div className={`card ${styles.SliderCard}`}>
-                      <div className="card-body">
-                        <p className={`card-text ${styles.SliderCardText}`}>
-                          Enthousiastic Professional. Very Responsive. Friendly Contact.
-                        </p>
-                      </div>
-                      <i
-                        className={`bi bi-caret-down-fill ${styles.downSmallArrow}`}
-                      ></i>
-                    </div>
-                    <span className={styles.ClientName}>Benno.</span>
-                    <span className={styles.Designation}>One-Page Homepage for aureum.ag</span>
-                  </div>
-                </div>
+ 
+  const slides = [];
+  for (let i = 0; i < successStories.length; i += 2) {
+    slides.push(successStories.slice(i, i + 2));
+  }
 
-              </div>
-              <div className="carousel-item">
+  return (
+    <div className={`bg-light-subtle ${styles.SuccessStories}`}>
+      <div className="container py-3">
+        <h2 className="heading">Success stories from our Partners</h2>
+        <div id="carouselExampleIndicators" className="carousel slide">
+          <div className={`carousel-indicators ${styles.SliderIndication}`}>
+            
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to={index}
+                className={index === 0 ? "active" : ""}
+                aria-label={`Slide ${index + 1}`}
+                style={{ backgroundColor: "#333" }}
+              ></button>
+            ))}
+          </div>
+
+          <div className="carousel-inner">
+            {/* Only 4 slides */}
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className={`carousel-item ${index === 0 ? "active" : ""}`}
+              >
                 <div className="row">
-                <div className={`col-sm-6 mb-3 mb-sm-0 ${styles.TextStyle}`}>
+                  {/* First story in the slide */}
+                  <div className={`col-sm-6 mb-3 mb-sm-0 ${styles.TextStyle}`}>
                     <div className={`card ${styles.SliderCard}`}>
                       <div className="card-body">
                         <p className={`card-text ${styles.SliderCardText}`}>
-                          Outstanding work! We needed a quick turn-around, and the work was completed within a couple hours - including my multiple revisions. Great job!                        </p>
+                          {slide[0].feedback}
+                        </p>
                       </div>
                       <i
                         className={`bi bi-caret-down-fill ${styles.downSmallArrow}`}
                       ></i>
                     </div>
-                    <span className={styles.Designation}>Expert guidance and quick changes to PSD logo, multiple output - Immediate need</span>
+                    <span className={styles.ClientName}>{slide[0].clientName}</span>
+                    {slide[0].designation && (
+                      <span className={styles.Designation}>{slide[0].designation}</span>
+                    )}
                   </div>
+
+                  {/* Second story in the slide */}
+                  {slide[1] && (
+                    <div className={`col-sm-6 mb-3 mb-sm-0 ${styles.TextStyle}`}>
+                      <div className={`card ${styles.SliderCard}`}>
+                        <div className="card-body">
+                          <p className={`card-text ${styles.SliderCardText}`}>
+                            {slide[1].feedback}
+                          </p>
+                        </div>
+                        <i
+                          className={`bi bi-caret-down-fill ${styles.downSmallArrow}`}
+                        ></i>
+                      </div>
+                      <span className={styles.ClientName}>{slide[1].clientName}</span>
+                      {slide[1].designation && (
+                        <span className={styles.Designation}>{slide[1].designation}</span>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

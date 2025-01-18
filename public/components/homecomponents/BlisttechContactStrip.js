@@ -19,7 +19,7 @@ export default function BlisttechContactStrip() {
               </div>
               <div className={styles.ContentText}>
                 <h4>LOCATION</h4>
-                <p className="m-0">Chandigarh, India</p>
+                <p className="m-0"><a href="https://maps.app.goo.gl/g1RwQrxVPp9DA4AT8" target="_blank" title="Chandighar">Chandigarh, India</a></p>
               </div>
             </li>
             <li className="col">
@@ -33,7 +33,8 @@ export default function BlisttechContactStrip() {
               </div>
               <div className={styles.ContentText}>
                 <h4>EMAIL</h4>
-                <p className="m-0">blisttech@gmail.com</p>
+                <p className="m-0"><a href="mailto:blisttech@gmail.com" title="blisttech@gmail.com">blisttech@gmail.com</a></p>
+                
               </div>
             </li>
             <li className="col">
@@ -47,7 +48,7 @@ export default function BlisttechContactStrip() {
               </div>
               <div className={styles.ContentText}>
                 <h4>SKYPE</h4>
-                <p className="m-0">blisttech</p>
+                <p className="m-0"><a href="skype:blisttech?chat" title="blisttech">blisttech</a></p>
               </div>
             </li>
           </ul>
