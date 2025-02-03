@@ -1,3 +1,4 @@
+
 import React from 'react';
 import styles from './Header.module.css';
 import Image from 'next/image';
@@ -9,7 +10,8 @@ export default function Header() {
         <nav className="navbar navbar-expand-lg bg-body-tertiary p-0">
           <div className="container">
             <div className={styles.logo}>
-              <Image src="/images/header/logo.png" alt="Description of the image" width={251} height={58} />
+              <a href='/'>
+              <Image src="/images/header/logo.png" alt="Description of the image" width={251} height={58} /></a>
             </div>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -30,10 +32,10 @@ export default function Header() {
 
               <ul className="navbar-nav me-0 ms-auto gap-4">
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">BlistTech</a>
+                  <a className="nav-link" title="BlistTech" aria-current="page" href="/aboutus">BlistTech</a>
                 </li>
                 <li className={`nav-item dropdown${styles.DropdownMenu}`}>
-                 <a className={`nav-link dropdown-toggle ${styles.DropdownArrow}`} href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <a className={`nav-link dropdown-toggle ${styles.DropdownArrow}`} title="Design" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Design
                   </a>
                  <ul className={`dropdown-menu row ${styles.megamenu}`}>
@@ -73,16 +75,16 @@ export default function Header() {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Devlopment</a>
+                  <a className="nav-link" title="Devlopment"  href="#">Devlopment</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Team</a>
+                  <a className="nav-link" title="Team"  href="/teams">Team</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Portfolio</a>
+                  <a className="nav-link" title="Portfolio"  href="/portfolio">Portfolio</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Contact Us</a>
+                  <a className="nav-link" title="Contact Us"  href="#">Contact Us</a>
                 </li>
               </ul>
             </div>

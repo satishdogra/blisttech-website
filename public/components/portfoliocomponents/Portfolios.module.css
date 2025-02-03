@@ -1,0 +1,27 @@
+.portfolios {
+    padding: 50px 0px;
+
+}
+.portfolio_Name h2 {
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 300;
+  color: #04b53f;
+}
+.portfolio_Name p {
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.portfolio_Name a{
+    background-color: red;
+    color: white;
+}
+.portfolio_Name a:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 2px 2px 15px #ccc;
+}
+

@@ -13,7 +13,7 @@ export default function OurWork() {
             <div
               key={index}
               className="col-md-3 col-12 p-0"
-              style={{ paddingRight: index % 4 === 3 ? "3px" : "0" }} // Adding column gap for the last item in each row
+              style={{ paddingRight: index % 4 === 3 ? "3px" : "0" }} 
             >
               <div
                 className="card rounded-0 border border-white"
