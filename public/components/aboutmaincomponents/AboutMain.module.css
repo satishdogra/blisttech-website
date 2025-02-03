@@ -1,0 +1,21 @@
+.about{
+    font-size: 16px;
+    color: #777;
+    font-weight: 300;
+    line-height: 25px;
+}
+.about h4{
+    font-size: 18px;
+}
+.services h3{
+    font-size: 35px;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    color: #28323c;
+}
+.services strong{
+    font-weight: bold;
+    font-size: 16px;
+}

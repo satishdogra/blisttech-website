@@ -1,0 +1,60 @@
+.landingPage h2 {
+    margin: 0px 0 40px;
+    color: #28323c;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 300;
+    }
+.cardImg {
+  overflow: hidden;
+  height: 100%;
+  border: none;
+  position: relative;
+}
+.zoom {
+  transition: transform 1s;
+  margin: 0 auto;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cardImg:hover .zoom {
+  -ms-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  z-index: 8;
+  text-align: center;
+  display: block;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.22);
+  transition: 0.5s;
+}
+.overlay a {
+  text-decoration: none;
+}
+.cardImg:hover .overlay {
+  opacity: 100;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

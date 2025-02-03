@@ -1,0 +1,13 @@
+.portfolioBanner{
+    background-image: url('/images/aboutmain/Banner/bt-crismas.jpg');
+}
+.banner h1{
+margin: 0;
+font-size: 50px;
+font-weight: lighter;
+color: #04b53f;
+}
+.banner h1 strong{
+    font-weight: lighter;  
+    color: #333;
+}

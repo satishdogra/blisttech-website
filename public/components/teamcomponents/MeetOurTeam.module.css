@@ -1,0 +1,63 @@
+.ourTeam {
+  padding: 60px 0;
+}
+.ourTeam h2 {
+  color: #535354;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px 0;
+  font-weight: 400;
+}
+
+.ourTeam p {
+  color: #777678;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  padding: 0 50px;
+}
+.ourTeam p strong{
+  font-weight: 700;
+}
+
+/*team mamber*/
+.team_Intro{
+  width: 100%;
+  margin: 100px 0;
+  display: inline-block;
+}
+.team_colum{
+  width: 1155px;
+  padding: 20px 0px;
+ }
+.team_Intro ul {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    padding: px;
+}
+.team_Intro ul li {
+  float: left;
+  width: 190px;
+  margin: 0 15px;
+  list-style-type: none;
+  }
+.team_Img img {
+  border-radius: 50%;
+}
+.team_Name {
+  width: 190px;
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 0px;
+  }
+.Designation{
+    width: 190px;
+    float: left;
+    font-size: 14px;
+    color: #333;
+}

@@ -1,0 +1,88 @@
+.skill{
+    background-color: #fafafa;
+}
+.skill_box h3{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    color: #28323c;
+}
+.subheading h2{
+    font-size: 35px;
+    font-weight: 100;
+    color: #28323c;
+    font-style: italic;
+}
+.single_skill {
+    background: #f2f2f2;
+    border-radius: 100%;
+    color: #353131;
+    font-size: 22px;
+    font-weight: bold;
+    height: 200px;
+    position: relative;
+    width: 200px;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 20px 30px;
+    border: 1px solid #fafafa;
+}
+.single_skill p {
+    line-height: 1;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+.single_skill p em{
+    font-size: 38px;
+}
+
+.photo_skill{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    border-radius: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #ffffff 15%, #2d7da4 15%, #2d7da4 100%);
+    background: linear-gradient(to bottom, #ffffff 15%, #2d7da4 15%, #2d7da4 100%);   
+   
+}
+.html_skill{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    border-radius: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #ffffff 5%, #6aa42f 5%, #6aa42f 100%);
+    background: linear-gradient(to bottom, #ffffff 5%, #6aa42f 5%, #6aa42f 100%);
+}
+.boot_skill{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    border-radius: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #ffffff 9%, #563d7c 9%, #6f5499 100%);
+    background: linear-gradient(to bottom, #ffffff 9%, #563d7c 9%, #6f5499 100%);
+   }
+.wp_skill{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    border-radius: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #ffffff 15%, #db3615 15%, #db3615 100%);
+    background: linear-gradient(to bottom, #ffffff 15%, #db3615 15%, #db3615 100%);
+}
